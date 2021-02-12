@@ -14,14 +14,14 @@ namespace PortfolioOne.Controllers
         return View();
       }
       [HttpGet("projects")]
-      public string Projects()
+      public ViewResult Projects()
       {
-        return "Projects";
+        return View("Projects");
       }
       [HttpGet("contact")]
-      public string Contact()
+      public ViewResult Contact()
       {
-        return "Contact Me";
+        return View("Contact");
       }
     }
 }
